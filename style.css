@@ -1,0 +1,162 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+ body {
+     background-color: hsl(233, 47%, 7%);
+ }
+
+
+ .container {
+    width: 650px;
+    height: 300px;
+    margin: 100px auto;
+    justify-content: center;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+ .content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.pic {
+    background-color: hsl(277, 64%, 61%)
+}
+
+.pic img {
+    width:325px;
+    height: 300px;
+    mix-blend-mode: multiply
+}
+
+.detail {
+    text-align: center;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    background-color:hsl(244, 38%, 16%);
+    color: hsl(0, 0%, 100%)
+    
+}
+
+.detail h1{
+    font-family: 'Inter', sans-serif;
+    font-size:22px;
+    font-weight: 700;
+    text-align:start;
+}
+
+.detail span{
+    color: hsl(277, 64%, 61%);
+}
+
+.detail p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 1rem;
+    line-height: 1.4rem;
+    text-align:start;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.card h2 {
+    font-family: 'Inter', sans-serif;
+    font-size:18px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.card p {
+    margin-top: -0.1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.c1,.c2,.c3 {
+    margin: 0rem 1rem 0 1rem;
+}
+
+/* mobile screen */
+
+@media only screen and (max-width:376px){
+
+    .container{
+        width: 300px;
+        height: 600px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .pic{
+        width:300px;
+        height: 180px;
+
+    }
+
+    .pic img{
+        width:300px;
+        height: 180px;
+    }
+
+    .detail {
+        height: 420px;
+        overflow: hidden;
+    }
+
+    .detail h1{
+        text-align: center;
+    }
+    
+    .detail p {
+        text-align: center;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .c1,.c2,.c3 {
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: white; }
